@@ -37,13 +37,7 @@ public class frangmentCalendar extends Fragment {
         return inflater.inflate(R.layout.fragment_frangment_calendar, container, false);
     }
 
-    @Override
-    public void onCreate( Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
-
-
-    }
 }
 
 
