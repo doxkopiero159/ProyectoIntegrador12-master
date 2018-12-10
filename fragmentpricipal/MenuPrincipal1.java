@@ -78,11 +78,13 @@ public class MenuPrincipal1 extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.contenedor, new frangmentCalendar()).commit();
 
         }
-            else if (id==R.id.nav_estadisticas){
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new frangmentEstadisticas()).commit();
+        else if (id == R.id.nav_estadisticas) {
 
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new frangmentEstadisticas()).commit();
 
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

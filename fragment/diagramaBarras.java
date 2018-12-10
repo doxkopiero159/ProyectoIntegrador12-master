@@ -1,6 +1,7 @@
 package com.pierogranda.proyectointegrador12.fragment;
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -10,23 +11,26 @@ import android.view.ViewGroup;
 
 import com.pierogranda.proyectointegrador12.R;
 
-public class FirstFragment extends Fragment {
-    private static final String TAG = FirstFragment.class.getSimpleName();
+public class diagramaBarras extends Fragment {
 
-    public FirstFragment() {
+
+
+    private static final String TAG = diagramaCircular.class.getSimpleName();
+
+    public diagramaBarras() {
 
     }
 
     @Override
-public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    Log.d(TAG, "onCreate");
-}
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate");
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.d(TAG, "onCreateView");
-        View view = inflater.inflate(R.layout.fragment_first, container, false);
+        View view = inflater.inflate(R.layout.fragment_diagrama_barras  , container, false);
         return view;
     }
 
