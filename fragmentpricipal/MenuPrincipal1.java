@@ -86,23 +86,16 @@ public class MenuPrincipal1 extends AppCompatActivity
         int id = item.getItemId();
        FragmentManager fragmentManager=getSupportFragmentManager();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_pasantias) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new frangmentPasantias()).commit();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_perfil) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new frangmentDescripcion()).commit();
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_caledario){
             fragmentManager.beginTransaction().replace(R.id.contenedor,new frangmentCalendar()).commit();
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
+            }
 }
