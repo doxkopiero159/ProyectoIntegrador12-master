@@ -1,6 +1,7 @@
 package com.pierogranda.proyectointegrador12.fragmentpricipal;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.pierogranda.proyectointegrador12.EstadisticaActivity;
 import com.pierogranda.proyectointegrador12.R;
 import com.pierogranda.proyectointegrador12.fragmentpricipal.frangmentDescripcion;
 import com.pierogranda.proyectointegrador12.fragmentpricipal.frangmentPasantias;
@@ -80,7 +82,8 @@ public class MenuPrincipal1 extends AppCompatActivity
         }
         else if (id == R.id.nav_estadisticas) {
 
-            fragmentManager.beginTransaction().replace(R.id.contenedor, new frangmentEstadisticas()).commit();
+            Intent i= new Intent(MenuPrincipal1.this,EstadisticaActivity.class);
+            startActivity(i);
 
         }
 
